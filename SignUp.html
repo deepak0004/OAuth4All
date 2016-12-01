@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title>OAuth4All</title>
+    <style>
+        .signup, .voice {
+            width: 220px;
+            padding: 10px;
+            background: #FFA07A;
+            margin: 0 auto;
+        }
+        .signup button, .voice button {
+          width: 210px;
+          height: 40px;
+          background: #800080;
+          font-size: 14px;
+          color: #FFFFFF;
+          border: 2px solid indigo;
+          font-family: "Arial Black";
+          margin: 0 0 10px 2px;
+        }
+        .signup h1, .voice h1 {
+          font-family: "Impact";
+          margin: 0 0 0 55px;
+        }
+    </style>
+</head>
+
+<body bgcolor="#FFA07A">
+  <div class="signup"> 
+      <h1> Sign UP </h1>
+      <p> <input type = "text" placeholder = "E-mail" id="handle" style="width:210px; padding:10px"> </p>
+      <p> <input type = "password" placeholder = "Password" id="password" style="width:210px; padding:10px"> </p>
+      <button id="submit"> Submit </button> 
+      <br> <br>
+  </div>  
+
+  <div class="voice" style="display: none;"> 
+    <h1> Sign UP </h1> </br>
+    <button id = "record"> Record (<span id="make_less">3</span> times) </button>  
+    <button id = "stop" style="display: none;"> Stop </button> 
+    <button id="open_auth" style="display: none;"> Authenticate </button> <br> <Br>
+    <p style = "color: #000000; font-family: Impact; text-align: center"> Phrase: "Never forget tomorrow is a new day" </p>
+    <div id="store_ans">
+    </div>
+  </div>
+      
+ <script type="text/javascript" src="jquery-3.1.1.min.js"></script>  
+ <script type="text/javascript" src="voice.js"></script>
+
+ </body>
+</html>

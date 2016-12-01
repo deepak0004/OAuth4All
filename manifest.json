@@ -1,0 +1,32 @@
+{
+	"manifest_version": 2,
+
+	"name": "OAuth4All",
+	"description": "A voice authentication extension for Chrome",
+	"version": "1.0",
+	"author": "@auth_oauth",
+
+	"background": {
+		"scripts": ["auth.js"],
+		"persistent": true
+	},
+
+"options_ui": {
+    "page": "options.html",
+    "chrome_style": true,
+    "open_in_tab": true
+  },
+
+	"permissions": [
+        "tabs",
+        "http://*/",
+        "https://*/",
+		"storage",
+		"file://*/*"
+    ],
+
+	"browser_action": {
+		"default_icon": "logo.png",
+		"default_popup": "main_main.html"
+	}
+}
